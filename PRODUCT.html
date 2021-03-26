@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ecommerce</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+<header>
+  <img src="G21logo.jpg"  width="150" height="150">
+  <h1>Cosmetics & Skin Care Products</h1>
+</header>
+
+<ul>
+  <li><a href="HOME.html">Home</a></li>
+  <li><a href="PRODUCT.html">Product</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contactform.html">Contact</a></li>
+  <li style="float:right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> <i class="fas fa-sign-in-alt"></i>Login</button></li>
+  <li style="float:right"><a class="active" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+</ul>
+
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      text-align: center;
+    }
+    
+    /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    h2 {
+    background-color: none;
+    text-align: center;
+    font-size: 30px;
+    color:#A9A9A9	rgb(169,169,169) ;
+    font-weight: bold;
+    font-size:25px;
+    padding-top: 10px;
+    font-style: italic;
+    
+    }
+  
+h3 {
+    text-align: center;
+    padding-top: -5px;
+}
+
+
+
+.kim {
+   text-align: center;
+   padding-top: 10px;
+}
+.len{
+  padding-top: -70px;
+  padding-bottom: 100px;
+}
+
+    </style>
+    </head>
+    <body>
+    
+    <h2>Cleanser & Scrubs</h2>
+    <div class="len">
+        <h3 class= "kim">Sakura Facial Set </h3>
+        
+    <div class="row">
+      <div class="column">
+        <img src="product/sakuraserum.jpg" width="250" height="250">
+        <h4>Sakura Serum</h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 193.00</h5>
+        
+      </div>
+
+      <div class="column">
+        <img src="product/sakurafoamcleanser.jpg"  width="250" height="250">
+        <h4>Sakura Facial Foam Cleanser<h4>
+            <h5> <img src="basket.png"  style="width:25px"> ₱ 253.00</h5>
+
+      </div>
+
+      <div class="column">
+        <img src="product/spray.jpg"  width="250" height="250">
+        <h4> <img src="sale.png"  style="width:30px">Sakura Facial Mist</h4>
+        <div class="sale">₱ 188.00</div>
+        <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱88.00</div>   
+      </div>
+
+      <div class="column">
+        <img src="product/facemask.jpg"  width="250" height="250">
+        <h4>Sakura Clay Mask</h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 123.00</h5>
+      </div>
+    </div>
+    </div>
+    
+    <div class="len">
+        <h3 class= "kim">Glass Skin Set </h3>
+        
+    <div class="row">
+      <div class="column">
+        <img src="product/duokojic.jpg" width="250" height="250">
+        <h4> <img src="sale.png"  style="width:30px">2in1 Duo Kojic</h4>
+        <div class="sale">₱ 127.00</div>
+        <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱100.00</div>
+
+      </div>
+
+      <div class="column">
+        <img src="product/serum.jpg"  width="250" height="250">
+        <h4>Perfect Serum<h4>
+            <h5> <img src="basket.png"  style="width:25px"> ₱ 190.00</h5>
+      </div>
+
+      <div class="column">
+        <img src="product/rosetoner.jpg"  width="250" height="250">
+        <h4> <img src="sale.png"  style="width:30px">Rose liquor Toner</h4>
+      <div class="sale">₱ 200.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱165.00</div>
+      </div>
+
+      <div class="column">
+        <img src="product/acnemilk.jpg"  width="250" height="250">
+        <h4>Acne Milk</h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 353.00</h5>
+      </div>
+    </div>
+    </div>
+
+
+<div class="len">
+        <h2 class= "kim">Beauty Products </h2>
+        
+    <div class="row">
+      <div class="column">
+        <img src="product/lipstain.jpg" width="250" height="250">
+        <h4>Powder Stain</h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 192.00</h5>
+
+      </div>
+
+      <div class="column">
+        <img src="product/lipInk.jpg"  width="250" height="250">
+        <h4><img src="sale.png"  style="width:30px">Powder Lip Ink</h4>
+      <div class="sale">₱ 210.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱190.00</div>
+      </div>
+
+      <div class="column">
+        <img src="product/liprouge.jpg"  width="250" height="250">
+        <h4>Rouge A Levres</h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 163.00</h5>
+      </div>
+
+      <div class="column">
+        <img src="product/lippencil.jpg"  width="250" height="250">
+        <h4>Lip Color</h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 183.00</h5>
+      </div>
+    </div>
+</div>
+
+
+<div class="len">
+    <h3 class= "kim"> </h3>
+    
+<div class="row">
+  <div class="column">
+    <img src="product/lipbutter.jpg" width="250" height="250">
+    <h4>Lip Butter</h4>
+    <h5> <img src="basket.png"  style="width:25px"> ₱ 158.00</h5>
+
+  </div>
+
+  <div class="column">
+    <img src="product/lipmousse.jpg"  width="250" height="250">
+    <h4>Lip Mousse<h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 201.00</h5>
+  </div>
+
+  <div class="column">
+    <img src="product/lipgloss.jpg"  width="250" height="250">
+    <h4>Lip Gloss</h4>
+    <h5> <img src="basket.png"  style="width:25px"> ₱ 131.00</h5>
+  </div>
+
+  <div class="column">
+    <img src="product/4in1stick.jpg"  width="250" height="250">
+    <h4><img src="sale.png"  style="width:30px">4in1 Stick</h4>
+      <div class="sale">₱ 163.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱125.00</div>
+  </div>
+</div>
+</div>
+
+<div class="len">
+    <h3 class= "kim"> </h3>
+    
+<div class="row">
+  <div class="column">
+    <img src="product/bbicecream.jpg" width="250" height="250">
+    <h4>BB Ice Cream</h4>
+    <h5> <img src="basket.png"  style="width:25px"> ₱ 213.00</h5>
+ </div>
+
+  <div class="column">
+    <img src="product/cookieblush.jpg"  width="250" height="250">
+    <h4>Cookie Blush<h4>
+        <h5> <img src="basket.png"  style="width:25px"> ₱ 163.00</h5>
+  </div>
+
+  <div class="column">
+    <img src="product/cookiebrows.jpg"  width="250" height="250">
+    <h4><img src="sale.png"  style="width:30px">Cookie Brows</h4>
+      <div class="sale">₱ 183.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱130.00</div>
+  </div>
+
+  <div class="column">
+    <img src="product/lotion.jpg"  width="250" height="250">
+    <h4><img src="sale.png"  style="width:30px">Sparkle Lotion</h4>
+      <div class="sale">₱ 280.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱250.00</div>
+  </div>
+</div>
+</div>
+
+
+<!--login-->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar1.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<footer>  
+
+  <div class="foo">
+    <div class="w3-col m6 w3-large w3-margin-bottom" >
+          <div class="taa" style="float:left">
+          <i class="fa fa-map-marker" style="width:30px"></i> Manila, Phillipines<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +63987654321 <br></div>
+  
+          <div class="foo2">
+            <div class="w3-col m6 w3-large w3-margin-bottom" >
+                  <div class="taa2" style="float:right">
+                    <i class="fa fa-envelope" style="width:30px" style="float:left"></i> Email: g21commerceGroup4@gmail.com<br>
+                    <i class="fab fa-instagram" style="float:left" ></i>
+                    <i class="fab fa-snapchat" style="float:left"></i>
+                    <i class="fab fa-facebook" style="float:left"></i>
+                    <i class="fab fa-twitter" style="float:left"></i>
+                    <i class="fab fa-linkedin" style="float:left"></i></div>
+         
+          </div>
+        </div>
+          
+</footer>
+  
+  </body>
+  </html>

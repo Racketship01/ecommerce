@@ -1,0 +1,679 @@
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#EEEEEE;
+  background-size: cover;
+}
+
+
+/* Style the header */
+header {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  color:#A9A9A9	rgb(169,169,169) ;
+  background-image: url('header.jpg');
+  background-size: cover;
+  border-radius: 8px;
+}
+ 
+h1 {
+  color: rgb(14, 15, 14);
+   font-size:20px;
+   font-style: normal;
+   font-weight: bold;
+   text-align: center;
+   }
+
+.intro { 
+   color: rgb(14, 15, 14);
+   font-size: 20px;
+   font-style: italic;
+   font-weight: 100;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h2 {
+    background-color: none;
+    text-align: center;
+    font-size: 30px;
+    color:#A9A9A9	rgb(169,169,169) ;
+    font-weight: bold;
+    font-size:25px;
+    padding-top: 10px;
+    
+    }
+  
+h3 {
+    text-align: center;
+    padding-top: -5px;
+}
+
+ h4 {
+  text-align: center;
+  padding-top: -15px;
+  font-size: 18px;
+  
+}
+
+h5 {
+  text-align: center;
+  padding-top: -15px;
+  font-size: 15px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sale {
+  text-decoration: line-through;
+  text-decoration-style: initial;
+  color: red;
+  margin-top: -10px;
+}
+
+.onsale {
+  display: inline;
+  color: black;
+  padding-bottom: 10px;
+}
+
+
+/* Style the footer */
+footer {
+   position:absolute;
+   bottom:100;
+   width:100%;
+   height:100px;   /* Height of the footer */
+   background:#fcc2b7 ;
+   text-align: center;
+   color: black;
+   
+}
+
+
+.foo {
+  margin: 15px;
+  display: grid;
+  grid-column: span 2;
+}
+
+.taa {
+  text-align: left;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+.ina {
+  text-align: right;
+  margin-right: 30%;
+  margin-bottom: 15px;
+}
+
+
+.foo2 {
+  margin: 15px;
+  display: grid;
+  grid-column: span 2;
+}
+
+.taa2 {
+  text-align: right;
+  margin-right: 55%;
+  margin-bottom: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fcc2b7;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 10px;
+  text-decoration: none;
+  font-size: large;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(228, 97, 167);
+  font-size: larger;
+}
+
+.active {
+  font-size: larger;
+}
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  height: auto;
+  text-align: center;
+  font-size: larger;
+  font-weight: 30%;
+  padding-top: -5px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+  font-weight: 30%;
+  padding-top: -5px;
+}
+
+.column2 {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  height: auto;
+  text-align: center;
+  font-size: larger;
+  font-weight: 30%;
+  padding-top: 10px;
+  padding-bottom: 25px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  text-align: center;
+  font-weight: 30%;
+  padding-top: -5px;
+}
+
+
+
+
+
+/*log in*/
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  border:none;
+  overflow: hidden;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 4px;
+  cursor: pointer;
+  font-size: small;
+  width: 25px;
+  height: 58px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+/*CONTACT*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*Cart*/
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+/*rating*/
+
+.checked {
+  color: orange;
+}
+
+/*slideshow*/
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: none;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+/*about*/
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+  margin-top: 25px;
+}
+
+.content .content_sidebar {
+  grid-column: span 2;
+}
+
+.content .content_project {
+  grid-column: span 3;
+}
+
+.box {
+  margin-bottom: 50px;
+}
+
+.box .box_title {
+  padding-bottom: 10px;
+  border-bottom: var(--borderBottom);
+  margin-bottom: 25px;
+  border-bottom: solid 4px black;
+ text-align: center;
+}
+
+.box .box_categories {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.box_categories .box_category {
+  color: var(--greyColor);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.box_categories .box_category:last-child {
+  margin-bottom: 0;
+}
+
+.box_categories .box_category--selected {
+  color: black;
+}
+
+.box .box_text {
+  line-height: 1.5;
+}
+
+.content_project .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.project {
+  border-bottom: var(--borderBottom);
+  padding-bottom: 20px;
+  
+}
+
+.project .project_image {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.project .project_title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.project .project_author {
+  color: var(--greyColor);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.project .project_date,
+.project .project_location {
+  color: var(--greyColor);
+  display: block;
+}
+
+project .project_date {
+  font-weight: 300;
+}
+
+.project .project_location {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ecommerce</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+<header>
+  <img src="G21logo.jpg"  width="150" height="150">
+  <h1>Cosmetics & Skin Care Products</h1>
+</header>
+
+<ul>
+  <li><a href="HOME.html">Home</a></li>
+  <li><a href="PRODUCT.html">Product</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contactform.html">Contact</a></li>
+  <li style="float:right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto"> <i class="fas fa-sign-in-alt"></i>Login</button></li>
+  <li style="float:right"><a class="active" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+</ul>
+
+<h2>  G21 </h2>
+<div class= "intro">
+<p1> "Achieve the Koreana look without any side effects and complications with your skin.
+      This product is designed for the sensitive & acne prone skin. We collected dozens of 
+      skin care industry emails and are excited to share a few of our favorites with you. 
+      Scroll for inspiration and skin care routine tips!"</p1>
+</div>
+
+  <h2> Best Seller </h2>
+
+  <div class="row">
+    <div class="column" style="background-color:none;">
+      
+      <img src="home/kojic2.jpg"  width="300" height="300">
+       <h4> <img src="sale.png"  style="width:30px">2in1 Duo Kojic</h4>
+       <div class="sale">₱ 127.00</div>
+       <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱100.00 </div>
+       <span class="heading">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.1 average based on 254 reviews.</p>
+       
+    </div>
+   
+    <div class="column" style="background-color:none;">
+      <img src="home/serum2.jpg"  width="300" height="300">
+      <h4>Serum</h4>
+      <h5><img src="basket.png"  style="width:25px"> ₱ 190.00</h5>
+      <span class="heading">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.6 average based on 326 reviews.</p>
+
+    </div>
+
+    <div class="column" style="background-color:none;">
+      <img src="home/toner2.jpg"  width="300" height="300">
+      <h4> <img src="sale.png"  style="width:30px">Rose liquor Toner</h4>
+      <div class="sale">₱ 200.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱165.00</div>
+      <span class="heading">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.3 average based on 697 reviews.</p>
+    </div>
+   </div>
+
+  <div class="row2">
+    <div class="column2" style="background-color:none;">
+      <img src="home/powdertint.jpg"  width="300" height="300">
+      <h4>Powder Lip Tint</h4>
+      <h5> <img src="basket.png"  style="width:25px"> ₱ 150.00</h5>
+      <span class="heading">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.9 average based on 226 reviews.</p>
+
+
+    </div>
+    <div class="column2" style="background-color:none;">
+      <img src="home/lippowder.jpg"  width="300" height="300">
+      <h4><img src="sale.png"  style="width:30px">Powder Lip Ink</h4>
+      <div class="sale">₱ 210.00</div>
+      <div class="onsale"> <img src="basket.png"  style="width:25px"> ₱190.00</div>
+      <span class="heading">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.1 average based on 566 reviews.</p>
+    </div>
+
+    <div class="column2" style="background-color:none;">
+      <img src="home/bbcream.jpg"  width="300" height="300">
+      <h4>BB Ice Cream</h4>
+      <h5> <img src="basket.png"  style="width:25px"> ₱ 290.00</h5>
+      <span class="heading">User Rating</span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.1 average based on 125 reviews.</p>
+    </div>
+ </div>
+
+<!--login-->
+ <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar1.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+<!--Testimonial-->
+   
+<div class="slideshow-container">
+
+  <div class="mySlides">
+    <q>My new secret for a fresher look. I've tried this for overnight and nakita ko agad yung results ❤️ Sobrang bongga lalo na yung Bentonite Clay Mask ng G21.</q>
+    <p class="author">- Kelle Diaz</p>
+  </div>
+  
+  <div class="mySlides">
+    <q>Halos ang dami na naging users na hindi nagsisi at nagiging repeat buyers nito dahil sulit talaga at talagang effective. Eto pa, organic at very safe kaya hindi nakakatakot gamitin. </q>
+    <p class="author">- May May de Ocampo</p>
+  </div>
+  
+  <div class="mySlides">
+    <q>Delivery is fast even during ECQ
+      Seller is very nice and sent a photo before shipping the items
+      Thank you very much!
+      Will definitely order again soon!
+      Stay safe po~</q>
+    <p class="author">- Rachel Mendoza</p>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+
+
+
+
+ 
+<!--footer-->
+<footer>  
+
+  <div class="foo">
+    <div class="w3-col m6 w3-large w3-margin-bottom" >
+          <div class="taa" style="float:left">
+          <i class="fa fa-map-marker" style="width:30px"></i> Manila, Phillipines<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +63987654321 <br></div>
+  
+          <div class="foo2">
+            <div class="w3-col m6 w3-large w3-margin-bottom" >
+                  <div class="taa2" style="float:right">
+                    <i class="fa fa-envelope" style="width:30px" style="float:left"></i> Email: g21commerceGroup4@gmail.com<br>
+                    <i class="fab fa-instagram" style="float:left" ></i>
+                    <i class="fab fa-snapchat" style="float:left"></i>
+                    <i class="fab fa-facebook" style="float:left"></i>
+                    <i class="fab fa-twitter" style="float:left"></i>
+                    <i class="fab fa-linkedin" style="float:left"></i></div>
+         
+          </div>
+        </div>
+          
+</footer>
+
+</body>
+</html>

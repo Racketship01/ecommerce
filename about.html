@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ecommerce</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+<header>
+  <img src="G21logo.jpg"  width="150" height="150">
+  <h1>Cosmetics & Skin Care Products</h1>
+</header>
+
+<ul>
+  <li><a href="HOME.html">Home</a></li>
+  <li><a href="PRODUCT.html">Product</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contactform.html">Contact</a></li>
+  <li style="float:right"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> <i class="fas fa-sign-in-alt"></i>Login</button></li>
+  <li style="float:right"><a class="active" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+</ul>
+
+<main class="content">
+     <aside class="content_sidebar">
+      <div class="box">
+             <h3 class="box_title">G21 Cosmetics & Skin Care</h3>
+             <p class="box_text">Hello! The G21 Skin Care Online store’s product line and strategy of business perfectly make them worthy for online shopping. With a broad range of health and beauty products to extend from top names, the seller simply offers sufficient ways to extend their product offering to the Filipinos. We are a G21 Distributor. We‘re selling organic beauty products for affordable price. Please feel free to message us for your orders/inquiries. Thank you so much!</p>
+         </div>
+         <center><div class="box">
+             <h3 class="box_title"></h3>
+             <p class="box_text">"Let’s be Beautiful. Be Colorful. and Be You."</p>
+         </div></center>
+         
+      </div>
+     </aside>
+     <section class="content_project">
+         <div class="box">
+             <h3 class="box_title">About</h3>
+             <div class="grid">
+                 <article class="project">
+                     <img src="FinalG4.jpg" alt="" class="project_image">
+                     <h4 class="project_title">Our Team</h4>
+                     <h5 class="project_author">Ecommerce-Group4</h5>
+                     
+                     <p class="project_intro">lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus,
+                         ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+                         In convallis. Praesent id justo in neque elementum ultrices.</p>
+                     <span class="project_plus"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                         <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg></span>
+                 </article>
+                 <article class="project">
+                         <img src="product.jpg" alt="" class="project_image">
+                         <h4 class="project_title">Our Brand</h4>
+                         <h5 class="project_author">G21 Products</h5>
+                         
+                         <p class="project_intro">lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus,
+                             ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+                             In convallis. Praesent id justo in neque elementum ultrices.</p>
+                         <span class="project_plus"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                             <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg></span>
+                     </article>
+                     <article class="project">
+                             <img src="services.jpg" alt="" class="project_image">
+                             <h4 class="project_title">Our Services</h4>
+                             <h5 class="project_author">Offers</h5>
+                             
+                             <p class="project_intro">lorem Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus,
+                                 ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+                                 In convallis. Praesent id justo in neque elementum ultrices.</p>
+                             <span class="project_plus"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                 <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg></span>
+                         </article>
+             </div>
+         </div>
+     </section>
+ </main>
+
+
+
+
+
+
+
+<!--login-->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar1.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+<footer>  
+
+  <div class="foo">
+    <div class="w3-col m6 w3-large w3-margin-bottom" >
+          <div class="taa" style="float:left">
+          <i class="fa fa-map-marker" style="width:30px"></i> Manila, Phillipines<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +63987654321 <br></div>
+  
+          <div class="foo2">
+            <div class="w3-col m6 w3-large w3-margin-bottom" >
+                  <div class="taa2" style="float:right">
+                    <i class="fa fa-envelope" style="width:30px" style="float:left"></i> Email: g21commerceGroup4@gmail.com<br>
+                    <i class="fab fa-instagram" style="float:left" ></i>
+                    <i class="fab fa-snapchat" style="float:left"></i>
+                    <i class="fab fa-facebook" style="float:left"></i>
+                    <i class="fab fa-twitter" style="float:left"></i>
+                    <i class="fab fa-linkedin" style="float:left"></i></div>
+         
+          </div>
+        </div>
+          
+</footer>
+</body>
+</html>
+
